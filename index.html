@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter by guruman </title>
+    <link rel="stylesheet" href="styte.css">
+    <link href="https://fonts.gooleapis.com/css2?
+    family=poppins:wght@400;600&display=swap" rel="stylesheet"
+    >
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="app-details">
+            <img class="zainab" src="images/currency logo.png" />
+            <h1 class="app-details"> Currency converter</h1>
+
+        </div>
+        <label for="amount">Amount:</label>
+        <input type="number" id ="amount" value="100">
+        <div class="dropdowns">
+            <select id="from-currency-select"  ></select>
+            <select id="to-currency-select"></select>
+        </div>
+        <button id="convert-button">convert<span>&#8595;</span>
+        </button>
+        <p id="result"p></p>
+        <div id="key">
+            
+        </div>
+    </div>
+    <script src="currency-codes.js"></script>
+    <script src="api-key.js"></script>
+    <script src="script.js "></script>
+</body>
+</html>
