@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>currency converter by guruman </title>
-    <link rel="stylesheet" href="styte.css">
-    <link href="https://fonts.gooleapis.com/css2?
-    family=poppins:wght@400;600&display=swap" rel="stylesheet"
-    >
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App by Guruman</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="wrapper">
-        <div class="app-details">
-            <img class="zainab" src="images/currency logo.png" />
-            <h1 class="app-details"> Currency converter</h1>
+  <h1>Weather App</h1>
+  <input type="text" id="cityInput" placeholder="Enter city name" />
+  <button id="getWeatherBtn">Get Weather</button>
 
-        </div>
-        <label for="amount">Amount:</label>
-        <input type="number" id ="amount" value="100">
-        <div class="dropdowns">
-            <select id="from-currency-select"  ></select>
-            <select id="to-currency-select"></select>
-        </div>
-        <button id="convert-button">convert<span>&#8595;</span>
-        </button>
-        <p id="result"p></p>
-        <div id="key">
-            
-        </div>
-    </div>
-    <script src="currency-codes.js"></script>
-    <script src="api-key.js"></script>
-    <script src="script.js "></script>
+  <div class="weather-card" id="weatherCard" style="display: none;">
+    <h2 id="cityName"></h2>
+    <img id="weatherIcon" class="icon" />
+    <p><span class="label">Description:</span> <span id="description"></span></p>
+    <p><span class="label">Temperature:</span> <span id="temperature"></span> °C</p>
+    <p><span class="label">Feels Like:</span> <span id="feelsLike"></span> °C</p>
+    <p><span class="label">Humidity:</span> <span id="humidity"></span>%</p>
+    <p><span class="label">Wind Speed:</span> <span id="wind"></span> m/s</p>
+    <p><span class="label">Sunrise:</span> <span id="sunrise"></span></p>
+    <p><span class="label">Sunset:</span> <span id="sunset"></span></p>
+  </div>
+
+  <h2 style="display:none;" id="forecastTitle">7-Day Forecast</h2>
+  <div id="forecast" class="forecast-container"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>

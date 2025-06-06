@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.weather-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  background-color: skyblue;
+}
+
+.icon {
+  width: 100px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.forecast-day {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  width: 130px;
+  background-color: #e9f2ff;
+}
