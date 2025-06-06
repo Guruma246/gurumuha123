@@ -3,29 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Weather App by Guruman</title>
+  <title>Weather App Guruman</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <h1>Weather App</h1>
   <input type="text" id="cityInput" placeholder="Enter city name" />
   <button id="getWeatherBtn">Get Weather</button>
 
-  <div class="weather-card" id="weatherCard" style="display: none;">
-    <h2 id="cityName"></h2>
-    <img id="weatherIcon" class="icon" />
-    <p><span class="label">Description:</span> <span id="description"></span></p>
-    <p><span class="label">Temperature:</span> <span id="temperature"></span> °C</p>
-    <p><span class="label">Feels Like:</span> <span id="feelsLike"></span> °C</p>
-    <p><span class="label">Humidity:</span> <span id="humidity"></span>%</p>
-    <p><span class="label">Wind Speed:</span> <span id="wind"></span> m/s</p>
-    <p><span class="label">Sunrise:</span> <span id="sunrise"></span></p>
-    <p><span class="label">Sunset:</span> <span id="sunset"></span></p>
+  <div id="weatherCard" class="weather-card" style="display: none;">
+    <div class="header">
+      <h2 id="cityName"></h2>
+      <img id="countryFlag" class="flag" />
+    </div>
+
+    <div class="weather-details">
+      <div class="weather-detail">
+        <img id="weatherIcon" class="icon" />
+        <p id="description"></p>
+      </div>
+
+      <div class="weather-detail">Temperature: <span id="temperature"></span> °C</div>
+      <div class="weather-detail">Feels Like: <span id="feelsLike"></span> °C</div>
+      <div class="weather-detail">Humidity: <span id="humidity"></span>%</div>
+      <div class="weather-detail">Wind Speed: <span id="wind"></span> m/s</div>
+      <div class="weather-detail">Sunrise: <span id="sunrise"></span></div>
+      <div class="weather-detail">Sunset: <span id="sunset"></span></div>
+    </div>
   </div>
 
-  <h2 style="display:none;" id="forecastTitle">7-Day Forecast</h2>
-  <div id="forecast" class="forecast-container"></div>
+  <canvas id="forecastChart" style="display:none; max-width: 800px; margin: 40px auto;"></canvas>
 
-  <script src="script.js"></script>
+  <script src="weather.js"></script>
 </body>
 </html>
