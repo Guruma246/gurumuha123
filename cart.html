@@ -3,155 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
-</head> 
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+     
+      
+    <title>Cart page E-commerce Website</title>
+</head>
 <body>
-
-    <section id="header"> 
-        <a href="#"><img  src="images/logo.png" class="logo">   </a>
-     <div>
-        <ul id="navbar">
-       <li><a  href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-         <li><a href="bolg.html">Blog</a></li>
-          <li><a  href="about.html">About</a></li>
-           <li><a href="contact.html">Contact</a></li>
-            <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i>
-</a></li>
-            <a href="#" id="close"><i class="far fa-times"></i></a>
-        </ul>
-     </div>
-     <div id="mobile">
-      <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-      <i id="bar" class="fa-solid fa-bars"></i>
-     </div>
-    </section>
-
-    <section id="page-header" class="about-header">
-    <h2>#lets_talk</h2>
-    <p>LEAVE A MESSAGE We Love to hear from you</p>
-    </section>
-
-   <section id="cart" class="section-p1">
-    <table width="80%">
-    <th>
-        <tr>
-            <td>Remove</td>
-            <td></td>
-            <td>Image</td>
-            <td>Products</td>
-            <td>Subtotal</td>
-            <td>Quantity</td>
-        </tr>
-    </th>
-    <tbody>
-       <tr>
-        <td><a href="#"></a><i class="far fa-times-circle"></a><td>
-        <td><img src="product/f1.avif"></td>
-        <td>Adidas</td>
-        <td>#54K</td>
-        <td><input class="input" type="number" value="1"></td>
-       </tr> 
-        <tr>
-        <td><a href="#"></a><i class="far fa-times-circle"></a><td>
-        <td><img src="product/f2.avif"></td>
-        <td>Shirt Coat</td>
-        <td>#64K</td>
-        <td><input class="input" type="number" value="1"></td>
-       </tr> 
-        <tr>
-        <td><a href="#"></a><i class="far fa-times-circle"></a><td>
-        <td><img src="product/f3.avif"></td>
-        <td>jacket</td>
-        <td>#34K</td>
-        <td><input class="input" type="number" value="1"></td>
-       </tr> 
-    </tbody>
-    </table>
-   </section>
-
-   <section id="cart-add" class="section-p1">
-    <div id="coupon">
-     <h3>Apply Coupon</h3>
-     <div>
-        <input type="text" placeholder="Enter your Coupon">
-        <button class="normal">Apply</button>
-     </div>
-    </div>
-<div id="Subtotal">
-   <h3>Cart Totals</h3>
-    <table>
-     <tr>
-        <td>Cart Subtotal</td>
-        <td>#234K</td>
-     </tr>
-     <tr>
-        <td>Shipping</td>
-        <td>Free</td>
-     </tr>
-     <tr>
-     <td><strong>Total</strong></td>
-     <td><strong>#234K</strong></td>
-     </tr>
- </table>
- <button class="normal">Proceed to checkout</button>
-</div>
-   </section>
-
-    <footer class="section-p1">
-     <div class="col">
-      <img class="logo" src="images/logo.png" alt="">
-      <h4>Contact</h4>
-      <p><strong>Address:</strong> 75 Gurumoh compound Gambari,Kwara State</p>
-      <p><strong>Hours</strong> 10:00 - 18:00, Mon - Sat</p>
-      <div class="follow">
-        <h4>Follow us</h4>
-        <div class="icon">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-linkedin"></i>
+     <div class="top_nav">
+      <div class="container top_nav_container">
+        <div class="top_nav_wrapper">
+         <p class="top_nav_p">
+          Summer Sale For All suit and Free Express Delivery-OFF 50%!  
+         </p>
+         <a href="#" class="top_nav_link">SHOP NOW </a>
         </div>
       </div>
      </div>
-     <div class="col">
-      <h4>About</h4>
-       <a href="#">About us</a>
-       <a href="#">Delivery Information</a>
-       <a href="#">Privacy Policy</a>
-       <a href="#">Terms & Conditions</a>
-       <a href="#">Contacts uUs</a>
-     </div>
 
-     <div class="col">
-      <h4>My Account</h4>
-       <a href="#">Sign In</a>
-       <a href="#">View Cart</a>
-       <a href="#">My Wishlists</a>
-       <a href="#">Track My Orders</a>
-       <a href="#">Contacts Us</a>
-     </div>
+     <nav class="nav">
+        <div class="container nav_container">
+        <a href="#" class="nav_logo">EXCLUSIVE</a>
+        <ul class="nav_list">
+            <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
+            <li class="nav_item"><a href="#" class="nav_link">About</a></li>
+            <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+            <li class="nav_item"><a href="./sign-up.html" class="nav_link">Sign up</a></li>
+            
+        </ul>
+        <div class="nav_items">
+            <form action="#" class="nav_form"><input type="text" class="nav_input" placeholder="search here....">
+                <img src="./images/search.png" class="nav_search">
+            </form>
+            <img src="./images/heart.jpg" class="nav_heart">
+             <a href="/cart.html">
+              <img src="./images/cart.jpg" class="nav_cart">
+             </a>
+        </div>
+        <span class="hambugar">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
 
-     <div class="col install">
-     <h4>Install App</h4>
-     <p>From Store or Google Play</p>
-     <div class="row">
-      <img src="play/play.png">
-      <img src="play/app.png">
-     </div>
-     <p>Secured Payment Gateways</p>
-     <img src="play/pay.jpeg">
-     </div>
+        </span>
+        </div>
+     </nav>
+      
+     <nav class="mobile_nav mobile_nav_hide">
+      <ul class="mobile_nav_list">
+        <li class="mobile_nav_item"><a href="#" class="mobile_nav_link">Home</a></li>
+        <li class="mobile_nav_item"><a href="#" class="mobile_nav_link">About</a></li>
+        <li class="mobile_nav_item"><a href="#" class="mobile_nav_link">Contact</a></li>
+        <li class="mobile_nav_item"><a href="/sign-up.html" class="mobile_nav_link">Sign up</a></li>
+        <li class="mobile_nav_item"><a href="/cart.html" class="mobile_nav_link">cart</a></li>
+        
+      </ul>
+     </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="cart">
+        <div class="cart_header">
+          <p class="cart_header_id">Product ID</p>
+          <p class="cart_header_imga">Product Title</p>
+          <p class="cart_header_title">Product Image</p>
+          <p class="cart_header_title">Price</p>
+          <p class="cart_header_title">Delete</p>
+        </div>
      
-     <div class="copyright">
-     <p>0 2025, Tech etc - HTML CSS E-commerce Template</p>
-     </div>
+    
+        <div class="cart-items">  
+           <div class="cart_zainab"> 
+        <p class="cart_id">ID</p>
+        <p class="cart_title">Product Title</p>
+        <img src="./images/items/item.jpg" alt="" class="cart_img">
+        <p class="cart_price">#15k</p>
+        <p class="cart_delete">Delete</p>
+        </div>
+        </div>
+        <div class="cart_total">
+          <p class="cart_total_p">Total: #130k</p>
+        </div>
+      </div>
+    </div>
+  </section>   
 
-    </footer>
 
-    <script src="script.js"></script>
+<footer class="footer">
+  <div class="container footer_container">
+    <div class="footer_item">
+      <a href="#" class="footer_logo">Exclusive</a>
+      <div class="footer_p">guruman aminat enterprices </div>
+    </div>
+    <div class="footer_item">
+      <h3 class="footer_item_title">Support</h3>
+       <ul class="footer_list">
+        <li class="li footer_list_item">Stockholn, Sweden</li>
+        <li class="li footer_list_item">gurumanmuhammad@gmail.com</li>
+        <li class="li footer_list_item">+234 916 099 7174</li>
+        <li class="li footer_list_item">+234 706 099 2853</li>
+       </ul>
+    </div>
+    <div class="footer_item">
+      <h3 class="footer_item_title">Account</h3>
+      <ul class="footer_list">
+        <li class="li footer_list_item">My Account</li>
+        <li class="li footer_list_item">Login / Register</li>
+        <li class="li footer_list_item">Cart</li>
+        <li class="li footer_list_item">Shop</li>
+       </ul>
+    </div>
+    <div class="footer_item">
+      <h3 class="footer_item_title">Quick Link</h3>
+      <ul class="footer_list">
+        <li class="li footer_list_item">Privacy policy</li>
+        <li class="li footer_list_item">Terms of use</li>
+        <li class="li footer_list_item">FAQ's</li>
+        <li class="li footer_list_item">Contact</li>
+       </ul>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <div class="container footer_bottom_container">
+      <p class="footer_copy">Copyright Exclusive 2023. All right reserved</p>
+    </div>
+  </div>
+</footer>
+
+ 
+
+
+<script src="./js/cart.js"></script>
 </body>
 </html>
